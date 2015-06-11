@@ -1101,14 +1101,14 @@ $galleryButton.click(function () {
 	$galleryBanner.removeClass("hidden");
 });
 
-$("#foo").slideme({
-arrows: true,
-// pagination: "numbers",
-resizable: {
-width: 100%;
-height: 300px;
-}
-});
+// $("#foo").slideme({
+// arrows: true,
+// // pagination: "numbers",
+// resizable: {
+// width: 100%;
+// height: 300px;
+// }
+// });
 
 
 
