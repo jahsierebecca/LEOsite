@@ -1,0 +1,108 @@
+<!-- To do: delete redundant JQUERY. One in js/libs, one in node_modles -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LEO</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href="dist/global.css" rel="stylesheet">
+	<link href="css/slideme.css" rel="stylesheet">
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="node_modules/underscore/underscore.js"></script>
+	<script type="text/javascript" src="node_modules/backbone/backbone.js"></script>
+	<script type="text/javascript" src="js/build/production.min.js"></script>
+</head>
+<body>
+	<div id="page-div">
+	<header class="flex-item">
+		<h1 id="site-title">LEO</h1>
+	</header>
+
+	<nav role='navigation' class="main-nav flex-item" id="main-nav">
+		<ul id="main-nav-list">
+			<li>
+				<a href="https://soundcloud.com/music-by-leo" target="blank">
+					<div>Soundcloud</div>
+				</a>
+			</li>
+			<li>
+				<a href="http://leomusic4.bandcamp.com/" target="blank">
+					<div>Bandcamp</div>
+				</a>
+			</li>
+			<li class="small-hidden">
+				<a href="#" id="about-button">
+					<div>About</div>
+				</a>
+			</li>
+			<li class="small-hidden">
+				<a href="#" id="shows-button">
+					<div>Shows</div>
+				</a>
+			</li>
+			<li class="small-hidden">
+				<a href="#" id="gallery-button">
+					<div>Gallery</div>
+				</a>
+			</li>
+			<li class="small-hidden">
+				<a href="#" id="collab-button">
+					<div>Collaboration</div>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div id='main-banner' class="flex-item">
+		<div id="default-banner" class="banner"></div>
+		<div id="about-banner" class="banner hidden">
+			<h2>About LEO</h2>
+			<p>Blah blah, jargon jargon, mysterious blah blah, just listen to the tunez.</p>
+		</div>
+		<div id="shows-banner" class="hidden banner">
+			<h2>Upcoming Shows</h2>
+			<p>Nothing at the moment but check back soon!</p>
+		</div>
+		<div id="collab-banner" class="hidden banner">
+			<div id="videos" class="collab">Composing</div>
+			<div id="recording-credits" class="collab">Recording Credits</div>
+			<div id="spare-time" class="collab">
+				<a href="http://www.pianopushplay.org" target="blank"><h3>In my spare time I rescue pianos</h3></a></div>
+		</div>	
+		<div id="gallery-banner" class="hidden banner">
+			<div id="foo">
+				<ul class="slideme">
+					<!-- <li><img src="images/leo_poster1.jpg"></li> -->
+					<li><img src="images/leo_poster2.jpg"></li>
+					<li><img src="images/leo_poster3.jpg"></li>
+					<li><img src="images/leo_poster4.png"></li>
+					<li><img src="images/leo_poster5.jpg"></li>
+					<li><img src="images/leo_poster6.png"></li>
+					<li><img src="images/leo_poster7.jpg"></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+	<div id='music-div' class="flex-item">
+		<div class="song"><iframe style="border: 0; width: 100%; height: 42px;" src="http://bandcamp.com/EmbeddedPlayer/album=2605738690/size=small/bgcol=ffffff/linkcol=FF0080/transparent=true/" seamless><a href="http://leomusic4.bandcamp.com/album/murder-mystery">Murder Mystery by LEO</a></iframe></div> 
+ 		<div class="song" id="middle-song"><iframe style="border: 0; width: 100%; height: 42px;" src="http://bandcamp.com/EmbeddedPlayer/album=870765122/size=small/bgcol=ffffff/linkcol=FF0080/transparent=true/" seamless><a href="http://leomusic4.bandcamp.com/album/second-coming">Second Coming by LEO</a></iframe></iframe></div>
+		<div class="song"><iframe style="border: 0; width: 100%; height: 42px;" src="http://bandcamp.com/EmbeddedPlayer/album=2515896235/size=small/bgcol=ffffff/linkcol=FF0080/transparent=true/" seamless><a href="http://leomusic4.bandcamp.com/album/dont-take-the-covers">Don&#39;t take the COVERS. by LEO</a></iframe></div>
+	</div>
+	<footer id="footer" class="flex-item">
+		<p class="center-text">
+			<a href="https://www.instagram.com/i.like.leo" target="blank">
+				<i class="fa fa-instagram"></i>
+			</a>
+			<a href="https://twitter.com/megandiana" target="blank">
+				<i class="fa fa-twitter-square"></i>
+			</a>
+			<a href="https://www.facebook.com/I.LIKE.LEO" target="blank">
+				<i class="fa fa-facebook-official"></i>
+			</a>
+		</p>
+	</footer>
+	</div>
+</body>
+</html>

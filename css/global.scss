@@ -1,0 +1,247 @@
+// @mixin centered 
+$pink: #FF0080;
+
+//Fonts
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400, 700italic|Montserrat:700");
+
+//GLOBAL STYLES
+/* Document level adjustments */
+html {
+
+  // color: red;
+  font-family: 'Lato', sans-serif;
+  color: #34495e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+/* Modules will scale with document */
+.header {
+  font-size: 1.5em;
+}
+.footer {
+  font-size: 0.75em;
+}
+.sidebar {
+  font-size: 0.85em;
+}
+
+/* Type will scale with modules */
+h1 {
+  font-size: 4em;
+  margin: 0;
+  color: $pink;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 3em;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+
+}
+#spare-time {
+  	text-decoration: none;
+  	color: red;
+}
+// h3:after {
+// 	margin: 5px;
+// }
+
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+#page-div {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-flow: column;
+    max-width: 900px;
+    margin: auto;
+}
+
+.flex-item {
+	flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.fa {
+	color: $pink;
+		font-size: 1.5em;
+}
+
+i > * {
+	color: $pink;
+}
+
+// .hidden {
+// 	display: flex;;
+// 	height: auto;
+// }
+
+.main-nav {
+  ul {
+    margin: 0 0 5px 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+  }
+  li {
+  	width: 100%;
+  }
+  a {
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    // align-items: flex-start;
+    font-weight: 300;
+    color: #333;
+    &:hover, &:focus {
+      color: $pink;
+    }
+  }
+}
+
+    .small-hidden {
+      display: none;
+    }
+
+.collab {
+	width: 100%;
+	display: block;
+	text-align: left;
+	vertical-align: top;
+	padding-top: 15px;
+}
+
+#music-div {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.song {
+	margin: 10px 0;
+	display: flex;
+    align-items: flex-start;
+    font-size: 1.6rem;
+    width: 100%;
+    iframe {
+    	// max-width: 250px;
+    	width: 100%;
+    }
+}
+
+.center-text {
+	text-align: center;
+}
+
+
+.banner {
+	text-align: center;
+}
+
+#default-banner {
+	background-image: url('./../images/leo_piano.jpg');
+	background-size: cover;
+	background-position: bottom;
+	height: 300px;
+	width: 100%;
+}
+
+#gallery-banner {
+	height: 300px;
+	width: 100%;
+	border: 1px solid red;
+}
+
+
+footer {
+	bottom: 0;
+	// height: 20px;
+	a {
+		margin: 10px 5px;
+		text-decoration: none;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px){
+	html { 
+		font-size: 17px; 
+		// color: blue;
+	}
+
+	body {
+		padding: 25px 70px;;
+	}
+	.hidden {
+		display: none;
+	}
+
+	#page-div {
+		// flex-flow: row;
+	}
+	#default-banner {
+		height: 100%;
+	}
+	#main-banner {
+		flex-basis: 350px;
+		height: 350px;
+		max-width: 900px;
+	}
+	.collab {
+		width: 33%;
+		padding-top: 15px;
+		display: inline-block;
+	}	
+	.main-nav {
+		li {
+			width: auto;
+		}
+    	.small-hidden {
+      	max-width: 100px;
+      	// font-size: 1rem; 
+    	display: flex;
+    	}
+
+    }
+    #middle-song {
+    	padding: 0 5px;
+    }
+    .song {
+    	max-width: 250px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+	// html {
+	// 	color: yellow;
+	// }
+}
