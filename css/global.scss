@@ -52,7 +52,7 @@ h3 {
 }
 #spare-time {
   	text-decoration: none;
-  	color: red;
+  	// color: red;
 }
 // h3:after {
 // 	margin: 5px;
@@ -180,7 +180,7 @@ i > * {
 #gallery-banner {
 	height: 300px;
 	width: 100%;
-	border: 1px solid red;
+	// border: 1px solid red;
 }
 
 
@@ -212,17 +212,20 @@ footer {
 		// flex-flow: row;
 	}
 	#default-banner {
-		height: 500px;
+		height: 450px;
 	}
 	#main-banner {
-		flex-basis: 500px;
-		height: 500px;
+		flex-basis: 450px;
+		height: 450px;
 		max-width: 900px;
 	}
 	.collab {
 		width: 33%;
 		padding-top: 15px;
 		display: inline-block;
+	}
+	#recording-credits, #videos {
+		padding-top: 50px;
 	}	
 	.main-nav {
 		li {
