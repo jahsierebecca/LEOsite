@@ -48,9 +48,12 @@ h3 {
   font-weight: 700;
   font-style: italic;
   text-align: center;
-  color: $pink;
-  margin-bottom: 10px;
 }
+
+// h4 {
+// 	text-align: center;
+// }
+
 #spare-time {
   	text-decoration: none;
   	text-align: center;
@@ -181,18 +184,45 @@ i > * {
 	text-align: center;
 }
 
+#videos {
+	iframe {
+		margin: auto;
+	}
+}
+
 #default-banner {
 	background-image: url('./../images/leo_piano.jpg');
 	background-size: cover;
-	background-position: bottom;
+	background-position: top;
 	height: 300px;
 	width: 100%;
 }
 
-#gallery-banner {
-	height: 300px;
+#gallery-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	height: 450px;
+	overflow: scroll;
 	width: 100%;
 	// border: 1px solid red;
+	img {
+		max-height: 50%;
+
+// width: 100px;  /* Or whatever */
+  // height: 100px; Or whatever
+  margin: 10px auto;  
+	}
+}
+
+#shows-list {
+	margin: auto;
+	text-align: left;
+	li {
+		margin: 5px;
+	}
+
 }
 
 
@@ -230,6 +260,9 @@ footer {
 		flex-basis: 450px;
 		height: 450px;
 		max-width: 900px;
+	}
+	#shows-list {
+		padding-left: 200px;
 	}
 	.collab {
 		width: 33%;
