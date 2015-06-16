@@ -19,16 +19,16 @@ module.exports = function(grunt) {
                 dest: 'js/build/production.min.js'
             }
         },
-        // imagemin: {
-        //     dynamic: {
-        //         files: [{
-        //             expand: true,
-        //             cwd: 'images/',
-        //             src: ['**/*.{png,jpg,gif}'],
-        //             dest: 'images/build/'
-        //         }]
-        //     }
-        // },
+        imagemin: {
+            dynamic: {                         // Another target
+              files: [{
+                expand: true,                  // Enable dynamic expansion
+                cwd: 'images/',                   // Src matches are relative to this path
+                src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+                dest: 'dist/'                  // Destination path prefix
+              }]
+            }
+        },
         sass: {
             dist: {
                 options: {
@@ -78,11 +78,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-autoprefixer');
-    // grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'uglify', 'watch', 'sass', 'autoprefixer']);
+    grunt.registerTask('default', ['concat', 'uglify', 'watch', 'sass', 'imagemin', 'autoprefixer']);
 
 };
 

@@ -132,6 +132,8 @@ i > * {
   	width: 100%;
   }
   a {
+  	
+
     font-size: 1em;
     font-weight: bold;
     text-decoration: none;
@@ -196,7 +198,7 @@ i > * {
 }
 
 #default-banner {
-	background-image: url('./../images/leo_piano.jpg');
+	background-image: url('./../dist/leo_piano.jpg');
 	background-size: cover;
 	background-position: top;
 	height: 300px;
